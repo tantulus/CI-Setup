@@ -8,6 +8,10 @@
 
 import UIKit
 import CoreData
+import MobileCenter
+import MobileCenterAnalytics
+import MobileCenterCrashes
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +20,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        //Just adding text to make changes
         // Override point for customization after application launch.
+        
+        MSMobileCenter.start("8b82089b-9d30-4317-800a-84362b3a30ab", withServices:[
+            MSAnalytics.self,
+            MSCrashes.self
+            ])
+        
         return true
     }
 
