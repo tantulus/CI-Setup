@@ -23,6 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Just adding text to make changes
         // Override point for customization after application launch.
         //This was added hto make a changeasd 
+        //asdsad
         
         MSMobileCenter.start("8b82089b-9d30-4317-800a-84362b3a30ab", withServices:[
             MSAnalytics.self,
